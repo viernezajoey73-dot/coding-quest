@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quest — Level Up Your Skills</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">⚔️ CODING QUEST</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Lobby</a>
+            <a href="quests/level1-html.html">Quests</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome, Hero</h1>
+            <p class="subtitle">Learn coding through quests, challenges & achievements — zero experience needed.</p>
+            
+            <div class="profile-card">
+                <div class="profile-header">
+                    <span class="rank">Rank: Apprentice</span>
+                    <span class="level">Level: <span id="user-level">1</span>/4</span>
+                </div>
+                <div class="progress-container">
+                    <span class="progress-label">Progress</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill" style="width: 10%"></div>
+                    </div>
+                </div>
+                <div class="stats-row">
+                    <div>Quests: <span id="quests-done">0</span>/12</div>
+                    <div>Badges: <span id="badges-count">1</span>/8</div>
+                </div>
+                <a href="quests/level1-html.html" class="btn primary-btn">Begin Level 1 →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Coding Quest — Free learning for everyone</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

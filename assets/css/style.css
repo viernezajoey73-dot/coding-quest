@@ -1,0 +1,33 @@
+:root {
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --gold: #fbbf24;
+    --orange: #f97316;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --border: #334155;
+    --success: #10b981;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: var(--bg-dark); color: var(--text); line-height: 1.6; min-height: 100vh; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: rgba(0,0,0,0.3); border-bottom: 1px solid var(--border); position: sticky; top: 0; }
+.nav-brand { font-size: 1.4rem; font-weight: bold; color: var(--gold); }
+.nav-links a { color: var(--muted); margin-left: 1.5rem; text-decoration: none; }
+.nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 2rem 5%; }
+.hero { text-align: center; padding: 2rem 0; }
+.hero h1 { font-size: 2.5rem; color: var(--gold); margin-bottom: 0.5rem; }
+.subtitle { color: var(--muted); max-width: 600px; margin: 0 auto 2rem; }
+
+.profile-card { background: var(--bg-card); border-radius: 16px; padding: 2rem; border: 1px solid var(--border); max-width: 550px; margin: 0 auto; }
+.profile-header { display: flex; justify-content: space-between; margin-bottom: 1rem; font-weight: 600; }
+.rank { color: var(--gold); }
+.progress-container { margin: 1.5rem 0; }
+.progress-bar { height: 14px; background: #1f2937; border-radius: 7px; overflow: hidden; margin-top: 0.4rem; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--orange)); width: 10%; transition: 0.5s; }
+.stats-row { display: flex; justify-content: space-around; margin: 1rem 0; color: var(--muted); }
+.btn { display: inline-block; padding: 0.85rem 2rem; border-radius: 10px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; }
+.primary-btn { background: linear-gradient(90deg, var(--gold), var(--orange)); color: #000; margin-top: 1rem; }
+footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }

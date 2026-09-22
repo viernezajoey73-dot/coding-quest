@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 — Village of Markup</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .quest-card { background: var(--bg-card); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; border: 1px solid var(--border); }
+        pre { background: #0f172a; padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0; border-left: 4px solid var(--gold); }
+        code { color: #94e2d5; font-family: monospace; }
+        .complete-btn { background: var(--success); color: white; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">⚔️ CODING QUEST</div>
+        <div class="nav-links">
+            <a href="../index.html">Lobby</a>
+            <a href="level1-html.html" class="active">Level 1</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 style="text-align:center; color:var(--gold); margin:2rem 0;">🏡 Level 1: Village of Markup</h1>
+        <p style="text-align:center; color:var(--muted); margin-bottom:2rem;">Build the skeleton of every webpage.</p>
+
+        <div class="quest-card">
+            <h3>Quest 1.1: Lay Your Foundation</h3>
+            <p>HTML = the skeleton of all websites. Copy this into a file named <code>mypage.html</code> and open it in your browser:</p>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;I built my first webpage!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <button class="btn complete-btn" onclick="completeQuest()">✓ Mark Complete</button>
+        </div>
+
+        <div class="quest-card">
+            <h3>Quest 1.2: Headings & Paragraphs</h3>
+            <p>Use &lt;h1&gt; to &lt;h6&gt; and &lt;p&gt; to write an introduction about yourself.</p>
+            <button class="btn complete-btn" onclick="completeQuest()">✓ Mark Complete</button>
+        </div>
+
+        <div class="quest-card">
+            <h3>Quest 1.3: Add Links & Images</h3>
+            <p>Use &lt;a href="url"&gt; for links and &lt;img src="url" alt="desc"&gt; for pictures.</p>
+            <button class="btn complete-btn" onclick="completeQuest()">✓ Mark Complete</button>
+        </div>
+
+        <div style="text-align:center; margin-top:3rem;">
+            <a href="../index.html" class="btn" style="background:var(--bg-card); color:white;">← Back to Lobby</a>
+            <a href="level2-css.html" class="btn primary-btn">Next Level →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Coding Quest — Free learning for everyone</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
